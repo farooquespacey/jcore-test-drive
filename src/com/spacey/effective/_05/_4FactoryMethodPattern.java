@@ -26,6 +26,7 @@ public class _4FactoryMethodPattern {
 		public static Shape getShape(String shapeType) {
 			Supplier<Shape> shape = map.get(shapeType.toUpperCase());
 			if (shape != null) {
+				System.out.println("Calling shape.get()");
 				return shape.get();
 			}
 			throw new IllegalArgumentException("No such shape " + shapeType.toUpperCase());

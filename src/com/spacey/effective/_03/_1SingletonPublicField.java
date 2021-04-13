@@ -3,7 +3,7 @@ package com.spacey.effective._03;
 public class _1SingletonPublicField {
 
 	public static void main(String[] args) {
-
+		Elvis elvis = Elvis.INSTANCE;
 	}
 
 	// Singleton with public final field
